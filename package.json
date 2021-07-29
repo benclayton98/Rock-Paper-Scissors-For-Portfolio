@@ -1,11 +1,27 @@
 {
   "name": "rock-paper-scissors-challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "Instructions\r -------",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "dearshrewdwit",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benclayton98/rock-papers-scissors-challenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benclayton98/rock-papers-scissors-challenge/issues"
+  },
+  "homepage": "https://github.com/benclayton98/rock-papers-scissors-challenge#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6"
+  }
 }
