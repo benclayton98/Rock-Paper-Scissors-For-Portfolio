@@ -2,7 +2,11 @@
 
 ## How to use
 
-Clone the repository using - git clone git@github.com:benclayton98/rock-papers-scissors-challenge.git
+Clone the repository  
+```javascript
+ git clone git@github.com:benclayton98/rock-papers-scissors-challenge.git 
+```
+then
 
 ```javascript
 
