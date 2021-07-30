@@ -18,4 +18,10 @@ describe('Rock, Paper Scissors', function(){
         cy.get('#rockSelected').should('contain', 'You have chosen Rock!')
         cy.url().should('include', '/rock')
     })
+
+    it('will ask the user to click the button to reveal what the CPU picked', function(){
+        cy.get('#cpuButton').click()
+        cy.get('#cpuSelect').should('exist')
+        cy.url().should('include', '/cpuTurn')
+    })
 })
