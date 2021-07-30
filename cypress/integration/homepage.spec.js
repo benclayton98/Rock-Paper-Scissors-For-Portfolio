@@ -12,4 +12,10 @@ describe('Rock, Paper Scissors', function(){
         cy.get('#scissorsButton')
         cy.url().should('include', '/name')
     })
+
+    it('can select an option and then display a message confirming which option was picked', function(){
+        cy.get('#rockButton').click()
+        cy.get('#rockSelected').should('contain', 'You have chosen Rock!')
+        cy.url().should('include', '/rock')
+    })
 })

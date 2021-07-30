@@ -19,6 +19,7 @@
   "homepage": "https://github.com/benclayton98/rock-papers-scissors-challenge#readme",
   "devDependencies": {
     "express": "^4.17.1",
+    "jasmine": "^3.8.0",
     "nodemon": "^2.0.12"
   },
   "dependencies": {
