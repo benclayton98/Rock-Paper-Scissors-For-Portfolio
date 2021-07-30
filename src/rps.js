@@ -27,7 +27,6 @@ class RPS {
     } else {
       this.cpuChoice = 'scissors'
     }
-    console.log(this.cpuChoice)
   }
 
   battle () {
@@ -50,6 +49,7 @@ class RPS {
         return `${this.name} wins`
       }
     }
+    
     if (this.cpuChoice === 'scissors') {
       if (this.choice === 'rock') {
         return `${this.name} wins`

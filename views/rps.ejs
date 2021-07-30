@@ -1,15 +1,19 @@
-<h1>Rock, Paper, Scissors</h1>
+<link rel="stylesheet" href="styles.css">
 
-<h2 id='nameStored'><%= `Welcome ${name}. Click either Rock, Paper or Scissors to start the game.`%></h2>
+<h1 class='subheading' >Rock, Paper, Scissors!</h1>
+<hr>
 
-<form action="/rock" method="POST">
-<input type="submit" value="Rock" id="rockButton">
+<h2 class ='message' id='nameStored'><%= `Welcome ${name}. Click either Rock, Paper or Scissors to start the game.`%></h2>
+
+<form class='centre' action="/rock" method="POST">
+<input class="rockButton" type="submit" value="Rock" id="rockButton">
 </form>
 
-<form action="/paper" method="POST">
-<input type="submit" value="Paper" id="paperButton">
+<form class="centre" action="/paper" method="POST">
+<input class='paperButton' type="submit" value="Paper" id="paperButton">
 </form>
 
-<form action="/scissors" method="POST">
-<input type="submit" value="Scissors" id="scissorsButton">
+<form class="centre" action="/scissors" method="POST">
+<input class='scissorsButton' type="submit" value="Scissors" id="scissorsButton">
 </form>
+</div>

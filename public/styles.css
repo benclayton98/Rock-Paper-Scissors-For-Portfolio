@@ -1,0 +1,124 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.heading{
+    position: relative;
+    left: 35%;
+    top: 1%
+}
+
+.subheading{
+    position: relative;
+    left: 41%;
+    top: 1%
+}
+
+.centre{
+    position: relative;
+    left: 40%;
+    top: 30%
+}
+
+.enterName{
+    position: relative;
+    left: 40%;
+    top: 10%
+}
+
+.homeForm{
+    position: relative;
+    left: 42%;
+    top: 15%
+}
+
+.choiceMessage{
+    position: relative;
+    left: 40%;
+    top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.choiceButton{
+    position: relative;
+    left: 20pt;
+    top: -50pt;
+}
+
+.playAgainButton{
+    position: relative;
+    left: 70pt;
+    top: -50pt;
+}
+
+.message{
+    position: relative;
+    left: 29%;
+    top: 10%
+}
+
+.rockButton {
+    background-color: #5a3819;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: -100pt;
+    top: -50pt;
+  }
+
+  .paperButton {
+    background-color: #cac7c5;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 20px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: 80pt;
+    top: -109pt;
+  }
+
+  .scissorsButton {
+    background-color: #0c2d5f;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: 270pt;
+    top: -168pt;
+  }
+
+
+.yourChoice{
+    position: relative;
+    left: 150pt;
+    top: 50pt;
+}
+
+.cpuChoice{
+    position: relative;
+    left: 800pt;
+    top: 0pt;
+}
+
+.result{
+    position: relative;
+    left: 550pt;
+    top: 70pt;
+    display: inline-block;
+    border: solid;
+    border-style:dotted
+
+}

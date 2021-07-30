@@ -1,10 +1,14 @@
-<h1 id='choiceSelected'><%=`You have chosen ${choice}!`%></h1>
+<link rel="stylesheet" href="styles.css">
+<h1 class='subheading' >Rock, Paper, Scissors!</h1>
+<hr>
+<br>
+<h1 class='yourChoice' id='choiceSelected'><%=`You have chosen ${choice}!`%></h1>
 
-<h1 id='cpuChoice'><%=`The CPU has chosen ${cpuChoice}`%> </h1>
+<h1 class='cpuChoice' id='cpuChoice'><%=`The CPU has chosen ${cpuChoice}`%> </h1>
 
-<h1 id='result'><%=`${result}`%></h1>
+<h1 class='result' id='result'><%=`${result}`%></h1>
 
-<form action="/" method="GET">
-<input type="submit" value="Play Again" id="playAgain">
+<form class ="centre" action="/" method="GET">
+<input class="playAgainButton" type="submit" value="Play Again" id="playAgain">
 </form>
 
