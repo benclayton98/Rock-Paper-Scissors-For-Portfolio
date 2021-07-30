@@ -23,23 +23,45 @@ app.post('/rock', (req, res) => {
     let game = req.app.locals.game
     game.rock()
     game.cpuTurn()
-    let result = game.battle()
-    console.log(result)
+    req.app.locals.choice = game.choice
+    req.app.locals.cpuChoice = game.cpuChoice
   res.render('rock.ejs', {
-    result: result
   })
 })
 
+
 app.post('/paper', (req, res) => {
+    let game = req.app.locals.game
+    game.paper()
+    game.cpuTurn()
+    req.app.locals.choice = game.choice
+    req.app.locals.cpuChoice = game.cpuChoice
   res.render('paper.ejs', {
   })
 })
 
 app.post('/scissors', (req, res) => {
+  let game = req.app.locals.game
+    game.scissors()
+    game.cpuTurn()
+    req.app.locals.choice = game.choice
+    req.app.locals.cpuChoice = game.cpuChoice
   res.render('scissors.ejs', {
   })
 })
 
+app.post('/cpuTurn', (req, res) => {
+  let game = req.app.locals.game
+  let choice = req.app.locals.choice
+  let cpuChoice = req.app.locals.cpuChoice
+  let result = game.battle()
+
+  res.render('cpuTurn.ejs', {
+    choice: choice,
+    cpuChoice: cpuChoice,
+    result: result
+  })
+})
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)

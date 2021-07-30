@@ -21,7 +21,17 @@ describe('Rock, Paper Scissors', function(){
 
     it('will ask the user to click the button to reveal what the CPU picked', function(){
         cy.get('#cpuButton').click()
-        cy.get('#cpuSelect').should('exist')
         cy.url().should('include', '/cpuTurn')
+    })
+
+    it('will show the choice of both the user and the cpu before showing the result', function(){
+        cy.get('#choiceSelected').should('contain', 'You have chosen')
+        cy.get('#cpuChoice').should('contain', 'The CPU has chosen')
+        cy.get('#result').should('exist')
+    })
+
+    it('will offer the user a chance to play again', function(){
+        cy.get('#playAgain').click()
+        cy.url().should('include', '/')
     })
 })
