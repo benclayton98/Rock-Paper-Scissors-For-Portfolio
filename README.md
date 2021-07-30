@@ -1,3 +1,39 @@
+# Rock, Paper, Scissors Challenge
+
+## How to use
+
+Clone the repository using - git clone git@github.com:benclayton98/rock-papers-scissors-challenge.git
+
+```javascript
+
+npm install
+
+npx nodemon index.js
+```
+Open up your browser and navigate to http://localhost:3000
+
+Play the game!
+
+## Approach
+
+I first approached this by creating my directory and installing all of the dependencies that I believed to be relevant to this project. The dependencies are express, jasmine, ejs and cypress.
+
+I then created my index.js file (where my app is stored) and I also created my welcome.ejs file.
+
+Then I began feature testing using cypress.
+
+After failing my tests, I coded my index.js file and added relevant .ejs files to ensure I passed those tests.
+
+Then I needed functionality and so created a class called RPS and used jasmine to unit test this. In similar fashion, I created failing tests and then added code to ensure that they passed.
+
+Then when I had finished the functionality of the program so that it worked, I decided to add a bit of CSS to the program to ensure that it looked a bit nicer to play. 
+
+
+
+
+
+
+
 # RPS Challenge
 
 Instructions
