@@ -34,7 +34,7 @@ class RPS {
       return 'It is a draw'
     }
 
-    if (this.cpuChoice === 'rock') {
+    else if (this.cpuChoice === 'rock') {
       if (this.choice === 'scissors') {
         return 'CPU wins'
       } else if (this.choice === 'paper') {
@@ -42,7 +42,7 @@ class RPS {
       }
     }
 
-    if (this.cpuChoice === 'paper') {
+    else if (this.cpuChoice === 'paper') {
       if (this.choice === 'rock') {
         return 'CPU wins'
       } else if (this.choice === 'scissors') {
@@ -50,7 +50,7 @@ class RPS {
       }
     }
     
-    if (this.cpuChoice === 'scissors') {
+    else if (this.cpuChoice === 'scissors') {
       if (this.choice === 'rock') {
         return `${this.name} wins`
       } else if (this.choice === 'paper') {
