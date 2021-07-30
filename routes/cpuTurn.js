@@ -2,10 +2,10 @@ const express = require('express')
 const router = express.Router()
 
 router.post('/', (req, res) => {
-  let game = req.app.locals.game
-  let choice = req.app.locals.choice
-  let cpuChoice = req.app.locals.cpuChoice
-  let result = game.battle()
+  const game = req.app.locals.game
+  const choice = req.app.locals.choice
+  const cpuChoice = req.app.locals.cpuChoice
+  const result = game.battle()
 
   res.render('cpuTurn.ejs', {
     choice: choice,
@@ -14,4 +14,4 @@ router.post('/', (req, res) => {
   })
 })
 
-module.exports = router;
+module.exports = router
