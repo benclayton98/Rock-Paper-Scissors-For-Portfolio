@@ -30,33 +30,16 @@ class RPS {
   }
 
   battle () {
-    if (this.cpuChoice === this.choice) {
-      return 'It is a draw'
-    }
-
-    else if (this.cpuChoice === 'rock') {
-      if (this.choice === 'scissors') {
-        return 'CPU wins'
-      } else if (this.choice === 'paper') {
-        return `${this.name} wins`
-      }
-    }
-
-    else if (this.cpuChoice === 'paper') {
-      if (this.choice === 'rock') {
-        return 'CPU wins'
-      } else if (this.choice === 'scissors') {
-        return `${this.name} wins`
-      }
-    }
+    if (this.cpuChoice === this.choice) return 'It is a draw'
     
-    else if (this.cpuChoice === 'scissors') {
-      if (this.choice === 'rock') {
-        return `${this.name} wins`
-      } else if (this.choice === 'paper') {
-        return 'CPU wins'
-      }
-    }
+    else if (this.cpuChoice === 'rock' && this.choice === 'scissors') return 'CPU wins' 
+      else if(this.cpuChoice === 'rock' && this.choice === 'paper') return `${this.name} wins`
+
+    else if (this.cpuChoice === 'paper' && this.choice === 'rock') return 'CPU wins'
+       else if (this.cpuChoice === 'paper' && this.choice === 'scissors') return `${this.name} wins`
+    
+    else if (this.cpuChoice === 'scissors' && this.choice === 'rock') return `${this.name} wins`
+     else return 'CPU wins'
   }
 }
 
